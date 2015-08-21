@@ -3,7 +3,7 @@ utf8math.sty 1.3
 
 This LaTeX package makes it possible to use UTF-8 characters directly
 in LaTeX documents. It works by turning UTF-8 character sequences into
-corresponding macro invocations. It is not integrated with the inputenc
+corresponding macro invocations. It is _not_ integrated with the `inputenc`
 package.
 
 USE
