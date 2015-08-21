@@ -39,7 +39,7 @@ five-column entry also includes a Vim digraph mapping.
             in the Vim editor. (optional)
 
 New entries in `utf8.table` are welcomed by the package author,
-[Andrew Myers](mailto:andru@cs.cornell.edu). Currently the table is up to date with Unicode 6.0.0.
+[Andrew Myers <andru@cs.cornell.edu>](mailto:andru@cs.cornell.edu). Currently the table is up to date with Unicode 6.0.0.
 
 HISTORY
 -------
