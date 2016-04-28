@@ -1,4 +1,4 @@
-utf8math.sty 1.3
+utf8math.sty 1.4
 ----------------
 
 This LaTeX package makes it possible to use UTF-8 characters directly
