@@ -1,4 +1,5 @@
-default: utf8.sty testutf8.pdf
+default: utf8.sty
+all: default testutf8.pdf
 clean:
 	rm -f utf8.sty testutf8.pdf testutf8.dvi
 
