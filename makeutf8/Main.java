@@ -15,6 +15,8 @@ import java.util.Locale;
 
 /* Generator for utf8math.sty. (Formerly called utf8.sty)
 
+   Also generates digraph sequences for Vim.
+
    Written by Andrew Myers, August 2007.
 
    Extended to support 4-byte sequences by Jed Liu, February 2010.
@@ -118,7 +120,8 @@ public class Main {
 	    vimout.println("\" Additional digraphs for Unicode characters");
 
             for (int i = 128; i < 256; i++) {
-                out.print("\\catcode" + i);
+                out.print("\\catcode`\\");
+                out.write((byte)i);
                 out.println("=" + (i >= 194 ? "13" : "12") + "% " +
                         Integer.toHexString(i));
             }
@@ -210,6 +213,10 @@ public class Main {
                 output(out, info);
                 out.println("}{% " + Integer.toHexString(info.code));
                 braces++;
+                if (info.digraph != null) {
+                    vimout.println("digraph " + info.digraph + " " +
+                        info.code);
+                }
             }
             closeBraces(out, braces);
             out.println("}\n");

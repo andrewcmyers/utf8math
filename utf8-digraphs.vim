@@ -1,4 +1,7 @@
 " Additional digraphs for Unicode characters
+digraph ^2 178
+digraph ^3 179
+digraph ^1 185
 digraph _i 7522
 digraph `` 8220
 digraph '' 8221
